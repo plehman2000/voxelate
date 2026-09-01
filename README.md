@@ -1,6 +1,6 @@
 # voxelate
 
-Convert 3D meshes into voxelized meshes. Optionally generate the source mesh from a text prompt via [TRELLIS](https://github.com/microsoft/TRELLIS) (run through WSL2) before voxelizing it.
+Text to 3D, with optional voxelization. Source mesh generation via [TRELLIS](https://github.com/microsoft/TRELLIS) (run through WSL2) before voxelizing it.
 
 ![Voxelated output](voxelated.png)
 
