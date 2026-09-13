@@ -1,26 +1,20 @@
 # voxelate
 
-Text to 3D, with optional voxelization. Source mesh generation via [TRELLIS](https://github.com/microsoft/TRELLIS) (run through WSL2) before voxelizing it.
-
-![Voxelated output](voxelated.png)
-
-## Usage
-
-Voxelize an existing mesh:
-
-```bash
-uv run python voxelate.py path/to/mesh.glb -o outputs/voxels.ply -p 0.02
-```
-
-- `-o, --out`: output voxel mesh file (`.ply` or `.binvox`)
-- `-p, --pitch`: voxel edge length (smaller = higher resolution)
-
-Generate a mesh from text and voxelize it in one step (requires WSL2 + a TRELLIS conda environment named `trellis`):
+Archetype → LLM writes a small primitive spec → deterministic compiler → `VoxelObjectPlan` JSON (4x4x12 max) + PNG preview.
 
 ```powershell
-./generate_voxels.ps1 -Text "a low poly fox" -Pitch 0.02
+uv run python voxgen.py outpost     # one archetype -> outputs/objects/outpost.{json,spec.json,png}
+uv run python voxgen.py --all       # all 13 archetypes
 ```
+
+Needs `OPENAI_API_KEY` in `.env`. Set `VOXGEN_PROVIDER=ollama` (+ `OLLAMA_MODEL`) to use a local model instead.
 
 ## How it works
 
-`voxelate.py` loads a mesh with [trimesh](https://trimesh.org/), voxelizes it at the given pitch, fills the interior, and exports the result either as a `.binvox` voxel grid or as a triangulated mesh of boxes (`.ply` and other mesh formats).
+Everything is in [voxgen.py](voxgen.py):
+
+- **Spec** (what the LLM writes): `box`, `hollow_box`, `column`, `pyramid`, `erase` parts with a material.
+- **Compiler**: applies parts in order, clamps to bounds, maps unknown materials to `stone`, keeps only the largest face-connected component (no floating voxels).
+- **Output**: `{"brief_summary", "voxels": [{x,y,z,material}]}`.
+
+The old TRELLIS text-to-mesh pipeline lives in [_misc/](_misc/).
