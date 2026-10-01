@@ -1,0 +1,211 @@
+{
+  "summary": "An overgrown ruin with weathered stone walls, half-collapsed towers, and organic rooflines, showcasing the remnants of its former grandeur.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        2,
+        0
+      ],
+      "to": [
+        8,
+        8,
+        5
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        1,
+        5
+      ],
+      "to": [
+        3,
+        2,
+        8
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        8,
+        1,
+        5
+      ],
+      "to": [
+        9,
+        2,
+        8
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        2,
+        8,
+        0
+      ],
+      "r": 1,
+      "h": 7,
+      "material": "primary_wall"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        9,
+        8,
+        0
+      ],
+      "r": 1,
+      "h": 7,
+      "material": "primary_wall"
+    },
+    {
+      "shape": "column",
+      "at": [
+        5,
+        2
+      ],
+      "z": [
+        5,
+        7
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        2,
+        0
+      ],
+      "to": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        7,
+        4
+      ],
+      "to": [
+        6,
+        8,
+        5
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        3,
+        0
+      ],
+      "to": [
+        5,
+        3,
+        1
+      ]
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        3,
+        2,
+        5
+      ],
+      "to": [
+        6,
+        8,
+        6
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        4,
+        4,
+        6
+      ],
+      "to": [
+        4,
+        4,
+        8
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        2,
+        1,
+        6
+      ],
+      "to": [
+        3,
+        2,
+        7
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        8,
+        1,
+        6
+      ],
+      "to": [
+        9,
+        2,
+        7
+      ]
+    },
+    {
+      "shape": "trim",
+      "from": [
+        3,
+        2,
+        8
+      ],
+      "to": [
+        8,
+        8,
+        8
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "sphere",
+      "at": [
+        5,
+        3,
+        7
+      ],
+      "r": 1,
+      "material": "leaf"
+    },
+    {
+      "shape": "sphere",
+      "at": [
+        8,
+        3,
+        7
+      ],
+      "r": 1,
+      "material": "leaf"
+    }
+  ],
+  "prompt": "Archetype: ruin_2. Kind: ruin facade (exterior of a ruin: broken, uneven, half-gone; fallen arch, rubble, vegetation). Mood: overgrown, collapsed, weathered, looted. Twist: lopsided, half-collapsed. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 313
+}

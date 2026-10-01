@@ -1,0 +1,255 @@
+{
+  "summary": "A bustling market-adjacent building featuring stone walls, a thatched roof with organic curves, and overgrown vines with hanging banners. It includes a fortified gate, large windows, a chimney, and a small balcony.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        2,
+        0
+      ],
+      "to": [
+        9,
+        9,
+        8
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "column",
+      "at": [
+        2,
+        2
+      ],
+      "z": [
+        0,
+        8
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        9,
+        2
+      ],
+      "z": [
+        0,
+        8
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        2,
+        9
+      ],
+      "z": [
+        0,
+        8
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        9,
+        9
+      ],
+      "z": [
+        0,
+        8
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        2,
+        0
+      ],
+      "to": [
+        6,
+        2,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        2,
+        3
+      ],
+      "to": [
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        9,
+        3
+      ],
+      "to": [
+        4,
+        9,
+        4
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        4,
+        3
+      ],
+      "to": [
+        6,
+        4,
+        4
+      ]
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        1,
+        1,
+        8
+      ],
+      "to": [
+        10,
+        10,
+        8
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        6,
+        2,
+        8
+      ],
+      "to": [
+        6,
+        3,
+        10
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        8,
+        5,
+        7
+      ],
+      "r": 1,
+      "h": 5,
+      "material": "stone"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        3,
+        9
+      ],
+      "to": [
+        7,
+        3,
+        10
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        2,
+        3,
+        7
+      ],
+      "to": [
+        2,
+        3,
+        8
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        5,
+        6
+      ],
+      "to": [
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        9,
+        4
+      ],
+      "to": [
+        7,
+        8,
+        6
+      ]
+    },
+    {
+      "shape": "trim",
+      "from": [
+        1,
+        1,
+        8
+      ],
+      "to": [
+        10,
+        10,
+        8
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "trim",
+      "from": [
+        2,
+        2,
+        0
+      ],
+      "to": [
+        9,
+        9,
+        0
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "trim",
+      "from": [
+        5,
+        6,
+        0
+      ],
+      "to": [
+        7,
+        7,
+        3
+      ],
+      "material": "wood"
+    }
+  ],
+  "prompt": "Archetype: settlement_0. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: bustling, residential, civic, well-lit, market-adjacent. Twist: overgrown, hanging banners. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 490
+}

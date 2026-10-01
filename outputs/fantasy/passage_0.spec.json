@@ -1,0 +1,217 @@
+{
+  "summary": "A narrow passage ruin with a half-collapsed stacked facade, featuring broken arches and creeping vegetation. The structure is made of uneven stone and wood, with a drafty atmosphere.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        4,
+        0
+      ],
+      "to": [
+        8,
+        10,
+        7
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        4
+      ],
+      "z": [
+        0,
+        6
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        8,
+        4
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        10
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        8,
+        10
+      ],
+      "z": [
+        0,
+        7
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        3,
+        10,
+        6
+      ],
+      "to": [
+        8,
+        10,
+        7
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        4,
+        9,
+        6
+      ],
+      "to": [
+        7,
+        9,
+        7
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        4,
+        0
+      ],
+      "to": [
+        6,
+        4,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        5,
+        2
+      ],
+      "to": [
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        5,
+        2
+      ],
+      "to": [
+        7,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        4,
+        5
+      ],
+      "to": [
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        8,
+        6,
+        1
+      ],
+      "to": [
+        9,
+        6,
+        5
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        9,
+        1
+      ],
+      "to": [
+        4,
+        9,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        1,
+        1
+      ],
+      "to": [
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "shape": "trim",
+      "from": [
+        3,
+        4,
+        7
+      ],
+      "to": [
+        8,
+        10,
+        7
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "trim",
+      "from": [
+        4,
+        5,
+        3
+      ],
+      "to": [
+        7,
+        5,
+        3
+      ],
+      "material": "accent"
+    }
+  ],
+  "prompt": "Archetype: passage_0. Kind: ruin facade (exterior of a ruin: broken, uneven, half-gone; fallen arch, rubble, vegetation). Mood: narrow, echoing, drafty, worn. Twist: half-collapsed, stacked like blocks. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 211
+}

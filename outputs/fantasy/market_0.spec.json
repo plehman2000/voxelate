@@ -1,0 +1,189 @@
+{
+  "summary": "A busy market building elevated on stilts, featuring a colorful lean-to annex, organic rooflines, and a fortified entrance.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        2,
+        0
+      ],
+      "to": [
+        10,
+        10,
+        6
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        0,
+        3,
+        0
+      ],
+      "to": [
+        2,
+        6,
+        6
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        10,
+        3,
+        0
+      ],
+      "to": [
+        11,
+        6,
+        5
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        0,
+        6
+      ],
+      "to": [
+        8,
+        1,
+        8
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        2,
+        0
+      ],
+      "to": [
+        6,
+        2,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        2,
+        3
+      ],
+      "to": [
+        5,
+        2,
+        4
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        8,
+        5,
+        4
+      ],
+      "to": [
+        9,
+        5,
+        5
+      ]
+    },
+    {
+      "shape": "column",
+      "at": [
+        2,
+        2
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "column",
+      "at": [
+        10,
+        2
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "column",
+      "at": [
+        10,
+        10
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "column",
+      "at": [
+        2,
+        10
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        3,
+        5,
+        8
+      ],
+      "r": 1,
+      "h": 6,
+      "material": "stone"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        2,
+        2,
+        8
+      ],
+      "to": [
+        10,
+        10
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "trim",
+      "from": [
+        1,
+        1,
+        6
+      ],
+      "to": [
+        11,
+        11,
+        6
+      ],
+      "material": "accent"
+    }
+  ],
+  "prompt": "Archetype: market_0. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: busy, cluttered, loud, colorful. Twist: on stilts, with a lean-to annex. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 633
+}

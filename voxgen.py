@@ -70,6 +70,14 @@ THEMES = {
         "massing_modifiers": {"verticality_scale": 2.5, "overhang_probability": 0.8},
         "surface_trim": {"material": "leaf", "chance": 0.05},
     },
+    "scifi_fantasy": {
+        "style": "fantasy stonework fused with sci-fi tech: stone towers crowned with glowing neon crystals, "
+                 "metal pipes and antennae, glass domes, slate roofs, ancient ruins with embedded machinery",
+        "palette_override": {"thatch": "slate", "leaf": "neon_signage", "glass": "tinted_glass"},
+        "slots": {"primary_wall": "stone", "roof": "thatch", "trim": "metal", "accent": "leaf"},
+        "massing_modifiers": {"verticality_scale": 1.4, "overhang_probability": 0.5},
+        "surface_trim": {"material": "leaf", "chance": 0.05},
+    },
 }
 DEFAULT_THEME = "fantasy"
 
@@ -115,6 +123,10 @@ M is exactly one of: {", ".join(sorted(MATERIALS))}, or an abstract slot: {", ".
 Prefer slots (primary_wall for walls, roof for roofs, trim for edges and frames, accent for signs/banners/details);
 the theme maps them to real materials.
 Everything must touch the ground or another part (no floating pieces). Use 6-14 parts.
+Use ONLY the shapes listed above; anything else is dropped. Cylinder/sphere "at" must have 3 numbers.
+Example (castle keep, 12 wide): hollow_box [1,1,0]-[10,10,9]; four corner cylinders at [1,1,0],[10,1,0],[1,10,0],[10,10,0]
+r=1 h=13; battlements = box [1,1,9]-[10,10,9] then erase every other top-edge voxel one at a time; gate = erase [5,1,0]-[6,1,2];
+slit windows = erase [3,1,5]-[3,1,6]; roof = pyramid on a small tower, not on the whole keep.
 Be weird and specific. Asymmetry, overhangs, odd silhouettes, mixed materials, a detail that tells a story.
 Never a plain box with a roof. Never centered and symmetric. No part bigger than 8x8x8; build from several
 smaller pieces at different heights and offsets. Use erase to punch windows, doors, gaps."""
@@ -191,16 +203,35 @@ def resolve_material(mat, theme):
     return mat if mat in MATERIALS else "stone"
 
 
+def _repair(part):
+    """Fix common LLM slips: 2-value 'at' on round shapes, unknown shapes that are really boxes."""
+    part = dict(part)
+    if part.get("shape") in ("cylinder", "sphere") and len(part.get("at", ())) == 2:
+        part["at"] = [*part["at"], 0]
+    if part.get("shape") not in ("box", "hollow_box", "column", "pyramid", "sphere", "wedge", "cylinder", "erase")             and "from" in part and "to" in part:
+        part["shape"] = "box"
+    if "r" in part:
+        part["r"] = max(int(round(part["r"] - 0.01)), 0)  # 0.5 -> 0 = single column
+    if part.get("shape") == "column" and len(part.get("at", ())) == 3:
+        part["at"] = part["at"][:2]
+    for k in ("from", "to"):
+        if k in part and len(part[k]) == 3:
+            part[k] = [part[k][0], part[k][1], max(part[k][2], 0)]
+    return part
+
+
 def compile_spec(spec, size=MAX_SIZE, theme=None):
     """Parts -> {(x,y,z): material}. Clamps bounds, binds slots, fixes materials, drops floating pieces."""
     theme = theme or get_theme(spec.get("theme"))
     grid = {}
     for part in spec.get("parts", []):
         mat = resolve_material(part.get("material", "primary_wall"), theme)
+        part = _repair(part)
         try:
             cells = list(_cells(part))
         except (KeyError, TypeError, ValueError):
-            continue  # malformed part: skip it
+            print(f"  skipped malformed part: {part}")
+            continue
         if part["shape"] == "erase" and len(cells) > 1:
             f, t = part["from"], part["to"]
             if all(abs(f[i] - t[i]) >= 1 for i in range(3)):

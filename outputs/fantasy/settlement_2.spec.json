@@ -1,0 +1,221 @@
+{
+  "summary": "A whimsical, precariously-leaning building with a mix of stone and wood materials, featuring organic rooflines, an awning over the entrance, and a small balcony. The structure has a fortified gate and a decorative sign pole.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        2,
+        0
+      ],
+      "to": [
+        7,
+        6,
+        8
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        5,
+        2,
+        8
+      ],
+      "to": [
+        6,
+        4,
+        10
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        0,
+        4,
+        5
+      ],
+      "to": [
+        2,
+        8,
+        8
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        7,
+        5,
+        5
+      ],
+      "to": [
+        11,
+        9,
+        9
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        2,
+        0
+      ],
+      "to": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        5,
+        6
+      ],
+      "to": [
+        5,
+        5,
+        7
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        1,
+        5,
+        2
+      ],
+      "to": [
+        1,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        4,
+        0
+      ],
+      "r": 1,
+      "h": 3,
+      "material": "wood"
+    },
+    {
+      "shape": "column",
+      "at": [
+        2,
+        2
+      ],
+      "z": [
+        0,
+        8
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "box",
+      "from": [
+        2,
+        2,
+        8
+      ],
+      "to": [
+        7,
+        6,
+        9
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        2,
+        2,
+        9
+      ],
+      "to": [
+        7,
+        6,
+        10
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        6,
+        6,
+        10
+      ],
+      "to": [
+        9,
+        8,
+        11
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        4
+      ],
+      "z": [
+        1,
+        4
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        0,
+        9
+      ],
+      "to": [
+        5,
+        0,
+        10
+      ]
+    },
+    {
+      "shape": "box",
+      "from": [
+        1,
+        1,
+        11
+      ],
+      "to": [
+        10,
+        10,
+        12
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "box",
+      "from": [
+        2,
+        0,
+        8
+      ],
+      "to": [
+        2,
+        0,
+        8
+      ],
+      "material": "trim"
+    }
+  ],
+  "prompt": "Archetype: settlement_2. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: bustling, residential, civic, well-lit, market-adjacent. Twist: leaning dangerously, stacked like blocks. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 578
+}

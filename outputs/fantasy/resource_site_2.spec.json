@@ -1,0 +1,166 @@
+{
+  "summary": "An overgrown resource site combines a cramped dwelling with a watchtower, featuring organic rooflines and a fortified style.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        2,
+        0
+      ],
+      "to": [
+        9,
+        9,
+        7
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        4,
+        4,
+        0
+      ],
+      "to": [
+        7,
+        7,
+        2
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        5,
+        5,
+        0
+      ],
+      "r": 1,
+      "h": 8,
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        2,
+        8
+      ],
+      "to": [
+        9,
+        9,
+        9
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        9,
+        3,
+        5
+      ],
+      "to": [
+        11,
+        5,
+        5
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        2,
+        0
+      ],
+      "to": [
+        5,
+        2,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        3,
+        4
+      ],
+      "to": [
+        4,
+        3,
+        5
+      ]
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        7
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        2,
+        1
+      ],
+      "to": [
+        8,
+        2,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        9,
+        5
+      ],
+      "to": [
+        6,
+        9,
+        6
+      ]
+    },
+    {
+      "shape": "trim",
+      "from": [
+        2,
+        2,
+        7
+      ],
+      "to": [
+        9,
+        9,
+        8
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        6,
+        6,
+        9
+      ],
+      "to": [
+        6,
+        6
+      ],
+      "material": "roof"
+    }
+  ],
+  "prompt": "Archetype: resource_site_2. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: industrious, cramped, dusty, echoing. Twist: with a watchtower, overgrown. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 472
+}

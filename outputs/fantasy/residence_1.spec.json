@@ -1,0 +1,211 @@
+{
+  "summary": "A cozy, two-story residence with organic rooflines and a fortified entrance, featuring a leaning chimney and hanging banners that flutter gently in the wind.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        3,
+        0
+      ],
+      "to": [
+        8,
+        8,
+        9
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        2,
+        9
+      ],
+      "to": [
+        9,
+        9,
+        12
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        3
+      ],
+      "z": [
+        0,
+        9
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        4,
+        3
+      ],
+      "z": [
+        0,
+        9
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        5,
+        3
+      ],
+      "z": [
+        0,
+        9
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        6,
+        3
+      ],
+      "z": [
+        0,
+        9
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "column",
+      "at": [
+        7,
+        3
+      ],
+      "z": [
+        0,
+        9
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        3,
+        0
+      ],
+      "to": [
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        5,
+        2
+      ],
+      "to": [
+        3,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        5,
+        2
+      ],
+      "to": [
+        7,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "box",
+      "from": [
+        2,
+        5,
+        12
+      ],
+      "to": [
+        9,
+        8,
+        13
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        2,
+        4,
+        9
+      ],
+      "to": [
+        9,
+        5,
+        10
+      ],
+      "material": "that"
+    },
+    {
+      "shape": "sphere",
+      "at": [
+        4,
+        6,
+        9
+      ],
+      "r": 1,
+      "material": "trim"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        2,
+        4,
+        10
+      ],
+      "to": [
+        9,
+        5,
+        10
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        8,
+        5,
+        6
+      ],
+      "r": 0.5,
+      "h": 6,
+      "material": "primary_wall"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        8,
+        8
+      ],
+      "to": [
+        6,
+        8,
+        10
+      ]
+    }
+  ],
+  "prompt": "Archetype: residence_1. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: homely, quiet, lived-in, cluttered. Twist: hanging banners, leaning dangerously. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 417
+}

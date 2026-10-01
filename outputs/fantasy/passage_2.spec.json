@@ -1,0 +1,189 @@
+{
+  "summary": "A narrow ruin facade with an uneven and broken design featuring cantilevered overhangs, a courtyard, and remnants of organic rooflines amidst the stone and wooden structure, enveloped in vegetation.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        4,
+        0
+      ],
+      "to": [
+        8,
+        7,
+        10
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        4,
+        5,
+        10
+      ],
+      "to": [
+        5,
+        6,
+        12
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "box",
+      "from": [
+        3,
+        4,
+        10
+      ],
+      "to": [
+        5,
+        6,
+        10
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        4,
+        0
+      ],
+      "r": 1,
+      "h": 12,
+      "material": "primary_wall"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        8,
+        7,
+        0
+      ],
+      "r": 1.5,
+      "h": 8,
+      "material": "primary_wall"
+    },
+    {
+      "shape": "box",
+      "from": [
+        3,
+        4,
+        12
+      ],
+      "to": [
+        8,
+        7,
+        12
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        4,
+        0
+      ],
+      "to": [
+        8,
+        4,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        4,
+        5
+      ],
+      "to": [
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        6,
+        4
+      ],
+      "to": [
+        6,
+        6,
+        5
+      ]
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        5,
+        5,
+        12
+      ],
+      "to": [
+        8,
+        6,
+        15
+      ],
+      "material": "trim"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        3,
+        3,
+        9
+      ],
+      "to": [
+        10,
+        8,
+        12
+      ],
+      "material": "trim"
+    },
+    {
+      "shape": "sphere",
+      "at": [
+        7,
+        6,
+        3
+      ],
+      "r": 1,
+      "material": "accent"
+    },
+    {
+      "shape": "column",
+      "at": [
+        4,
+        7
+      ],
+      "z": [
+        0,
+        8
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "box",
+      "from": [
+        2,
+        4,
+        1
+      ],
+      "to": [
+        9,
+        8,
+        1
+      ],
+      "material": "grass"
+    }
+  ],
+  "prompt": "Archetype: passage_2. Kind: ruin facade (exterior of a ruin: broken, uneven, half-gone; fallen arch, rubble, vegetation). Mood: narrow, echoing, drafty, worn. Twist: cantilevered overhangs, hollow with a courtyard. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 378
+}

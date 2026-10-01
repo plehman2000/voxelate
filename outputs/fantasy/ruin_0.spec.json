@@ -1,0 +1,225 @@
+{
+  "summary": "An overgrown ruin perched on stilts, featuring crumbling stone walls, a thatch roof half-collapsed, and encased in climbing vegetation, with a fortified gate and fallen arch details.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        3,
+        0
+      ],
+      "to": [
+        8,
+        8,
+        6
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        3,
+        0
+      ],
+      "to": [
+        5,
+        3,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        3,
+        0
+      ],
+      "to": [
+        7,
+        3,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        5,
+        0
+      ],
+      "to": [
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        8,
+        2
+      ],
+      "to": [
+        5,
+        8,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        8,
+        2
+      ],
+      "to": [
+        5,
+        8,
+        3
+      ]
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        4,
+        0
+      ],
+      "r": 1,
+      "h": 6,
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        8,
+        0
+      ],
+      "r": 1,
+      "h": 4,
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        8,
+        4,
+        0
+      ],
+      "r": 1,
+      "h": 5,
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        8,
+        8,
+        0
+      ],
+      "r": 1,
+      "h": 7,
+      "material": "wood"
+    },
+    {
+      "shape": "trim",
+      "from": [
+        3,
+        3,
+        6
+      ],
+      "to": [
+        8,
+        8,
+        6
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        2,
+        2,
+        6
+      ],
+      "to": [
+        9,
+        9
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        4,
+        1
+      ],
+      "to": [
+        5,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        5,
+        1
+      ],
+      "to": [
+        7,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "accent",
+      "from": [
+        4,
+        3,
+        5
+      ],
+      "to": [
+        5,
+        4,
+        6
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "accent",
+      "from": [
+        6,
+        3,
+        5
+      ],
+      "to": [
+        7,
+        4,
+        6
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        8,
+        3
+      ],
+      "to": [
+        6,
+        8,
+        4
+      ]
+    }
+  ],
+  "prompt": "Archetype: ruin_0. Kind: ruin facade (exterior of a ruin: broken, uneven, half-gone; fallen arch, rubble, vegetation). Mood: overgrown, collapsed, weathered, looted. Twist: on stilts, half-collapsed. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 281
+}

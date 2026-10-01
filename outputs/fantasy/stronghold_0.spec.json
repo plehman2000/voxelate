@@ -1,0 +1,189 @@
+{
+  "summary": "A fortified stronghold on stilts, featuring uneven roofs, defensive stone walls, wooden accents, and thatch details, with an imposing structure and multiple vertical elements.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        4,
+        3,
+        0
+      ],
+      "to": [
+        8,
+        7,
+        6
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        6,
+        2,
+        6
+      ],
+      "to": [
+        7,
+        3,
+        9
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        3,
+        0
+      ],
+      "r": 1,
+      "h": 5,
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        8,
+        3,
+        0
+      ],
+      "r": 1,
+      "h": 5,
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        7,
+        0
+      ],
+      "r": 1,
+      "h": 5,
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        8,
+        7,
+        0
+      ],
+      "r": 1,
+      "h": 5,
+      "material": "wood"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        3,
+        0
+      ],
+      "to": [
+        7,
+        3,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        3,
+        3
+      ],
+      "to": [
+        5,
+        3,
+        4
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        7,
+        2
+      ],
+      "to": [
+        6,
+        7,
+        3
+      ]
+    },
+    {
+      "shape": "box",
+      "from": [
+        6,
+        2,
+        9
+      ],
+      "to": [
+        7,
+        3,
+        9
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        4,
+        2,
+        9
+      ],
+      "to": [
+        8,
+        7,
+        10
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "trim",
+      "from": [
+        4,
+        2,
+        10
+      ],
+      "to": [
+        8,
+        3,
+        10
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "box",
+      "from": [
+        5,
+        6,
+        6
+      ],
+      "to": [
+        5,
+        6,
+        9
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "box",
+      "from": [
+        3,
+        5,
+        1
+      ],
+      "to": [
+        3,
+        5,
+        7
+      ],
+      "material": "stone"
+    }
+  ],
+  "prompt": "Archetype: stronghold_0. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: fortified, guarded, defensible, cold stone. Twist: lopsided, on stilts. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 230
+}

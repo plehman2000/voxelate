@@ -1,0 +1,208 @@
+{
+  "summary": "A bustling settlement building with crooked chimneys and overgrown details. Features a fortified main gate, multiple windows, and an organic roofline, integrating stone and wood materials.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        2,
+        0
+      ],
+      "to": [
+        9,
+        8,
+        7
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        5,
+        7,
+        7
+      ],
+      "to": [
+        7,
+        8,
+        10
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        1,
+        1,
+        0
+      ],
+      "to": [
+        2,
+        2,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        9,
+        1,
+        0
+      ],
+      "to": [
+        10,
+        2,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "column",
+      "at": [
+        5,
+        2
+      ],
+      "z": [
+        0,
+        6
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        2,
+        0
+      ],
+      "to": [
+        5,
+        2,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        3,
+        3,
+        2
+      ],
+      "to": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        2,
+        2
+      ],
+      "to": [
+        8,
+        2,
+        4
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        2,
+        5
+      ],
+      "to": [
+        5,
+        2,
+        6
+      ]
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        3,
+        5
+      ],
+      "r": 1,
+      "h": 3,
+      "material": "stone"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        2,
+        2,
+        7
+      ],
+      "to": [
+        9,
+        8,
+        7
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "trim",
+      "from": [
+        1,
+        1,
+        5
+      ],
+      "to": [
+        10,
+        10,
+        5
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        0,
+        7,
+        0
+      ],
+      "to": [
+        1,
+        8,
+        2
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        0,
+        6,
+        0
+      ],
+      "to": [
+        1,
+        7,
+        3
+      ],
+      "material": "thatch"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        1,
+        0
+      ],
+      "to": [
+        6,
+        1,
+        2
+      ]
+    }
+  ],
+  "prompt": "Archetype: settlement_1. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: bustling, residential, civic, well-lit, market-adjacent. Twist: crooked chimneys, overgrown. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 436
+}

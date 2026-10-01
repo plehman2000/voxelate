@@ -1,0 +1,207 @@
+{
+  "summary": "A cozy two-story residence made of stone and thatch, with a leaning watchtower and an overhanging balcony. The facade is adorned with a wooden sign, glass windows, and a chimney, giving it a homely, lived-in feel.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        3,
+        0
+      ],
+      "to": [
+        8,
+        8,
+        6
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        1,
+        1,
+        0
+      ],
+      "to": [
+        2,
+        2,
+        5
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        9,
+        1,
+        0
+      ],
+      "to": [
+        10,
+        2,
+        4
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "column",
+      "at": [
+        8,
+        3
+      ],
+      "z": [
+        0,
+        6
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        3,
+        0
+      ],
+      "to": [
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        5,
+        2
+      ],
+      "to": [
+        5,
+        5,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        5,
+        3
+      ],
+      "to": [
+        7,
+        5,
+        4
+      ]
+    },
+    {
+      "shape": "box",
+      "from": [
+        3,
+        3,
+        6
+      ],
+      "to": [
+        8,
+        8,
+        7
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        6.5,
+        6,
+        4
+      ],
+      "r": 0.5,
+      "h": 6,
+      "material": "wood"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        3,
+        4,
+        5
+      ],
+      "to": [
+        8,
+        5,
+        6
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        1,
+        1
+      ],
+      "to": [
+        5,
+        1,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        1,
+        1,
+        5
+      ],
+      "to": [
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        1,
+        2,
+        3
+      ],
+      "to": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "shape": "box",
+      "from": [
+        3,
+        3,
+        7
+      ],
+      "to": [
+        5,
+        4,
+        8
+      ],
+      "material": "accent"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        2.5,
+        7,
+        1
+      ],
+      "to": [
+        3.5,
+        8,
+        3
+      ],
+      "material": "thatch"
+    }
+  ],
+  "prompt": "Archetype: residence_0. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: homely, quiet, lived-in, cluttered. Twist: with a watchtower, leaning dangerously. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 216
+}

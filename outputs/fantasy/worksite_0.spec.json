@@ -1,0 +1,186 @@
+{
+  "summary": "A cluttered and noisy worksite building with a hollow courtyard, crooked chimneys, and fortified gates, blending stone, wood, and thatch materials under organic rooflines.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        3,
+        0
+      ],
+      "to": [
+        8,
+        9,
+        7
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        8
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "column",
+      "at": [
+        7,
+        8
+      ],
+      "z": [
+        0,
+        5
+      ],
+      "material": "wood"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        5,
+        6,
+        0
+      ],
+      "r": 1,
+      "h": 5,
+      "material": "stone"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        4,
+        3,
+        7
+      ],
+      "to": [
+        5,
+        4,
+        9
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        4,
+        5
+      ],
+      "to": [
+        4,
+        6,
+        6
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        3,
+        0
+      ],
+      "to": [
+        6,
+        3,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        5,
+        3
+      ],
+      "to": [
+        4,
+        5,
+        5
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        3,
+        4
+      ],
+      "to": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        3,
+        6,
+        0
+      ],
+      "to": [
+        5,
+        6,
+        1
+      ],
+      "material": "thatched"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        6,
+        5,
+        5
+      ],
+      "to": [
+        6,
+        5,
+        1
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        9,
+        0
+      ],
+      "r": 1,
+      "h": 7,
+      "material": "stone"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        2,
+        4,
+        2
+      ],
+      "to": [
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "shape": "circle",
+      "at": [
+        5,
+        5,
+        9
+      ],
+      "r": 2,
+      "material": "accent"
+    }
+  ],
+  "prompt": "Archetype: worksite_0. Kind: building (enclosed room(s) with a door and windows; someone lives or works here; show it (chimney, awning, ladder, balcony, sign pole)). Mood: industrious, noisy, cluttered, smoky. Twist: hollow with a courtyard, crooked chimneys. Theme: fantasy. Style: medium height, stone/wood/thatch, organic rooflines, ruined towers, fortified gates. Verticality x1.0 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 30% likely. Use the slots primary_wall, roof, trim, accent.",
+  "theme": "fantasy",
+  "compiled_voxels": 298
+}
