@@ -1,0 +1,138 @@
+{
+  "summary": "The structure is a skeletal representation of a giant skull, partially buried, exhibiting a jagged outline by the lower jaw. It has been fitted with windows that resemble eye sockets and a gaping mouth that serves as the entrance.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        1,
+        1,
+        0
+      ],
+      "to": [
+        6,
+        6,
+        5
+      ],
+      "material": "primary_wall"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        1,
+        1,
+        5
+      ],
+      "to": [
+        6,
+        6,
+        6
+      ],
+      "material": "roof"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        2,
+        3,
+        0
+      ],
+      "to": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        2,
+        1,
+        3
+      ],
+      "to": [
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        3
+      ],
+      "z": [
+        0,
+        4
+      ],
+      "material": "stone"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        1,
+        1,
+        0
+      ],
+      "material": "glass"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        3,
+        1,
+        6
+      ],
+      "to": [
+        4,
+        2,
+        8
+      ],
+      "material": "trim"
+    },
+    {
+      "shape": "column",
+      "at": [
+        2,
+        4
+      ],
+      "z": [
+        0,
+        3
+      ],
+      "material": "bone"
+    },
+    {
+      "shape": "sphere",
+      "at": [
+        4,
+        6,
+        3
+      ],
+      "r": 2,
+      "material": "wood"
+    },
+    {
+      "shape": "wedge",
+      "from": [
+        0,
+        6,
+        1
+      ],
+      "to": [
+        1,
+        6,
+        0
+      ],
+      "material": "thatch"
+    }
+  ],
+  "prompt": "dead giant skull",
+  "theme": "fantasy",
+  "compiled_voxels": 227
+}

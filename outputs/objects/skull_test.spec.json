@@ -1,0 +1,133 @@
+{
+  "summary": "A giant half-buried skull staring out of the ground, eye sockets hollow.",
+  "parts": [
+    {
+      "shape": "sphere",
+      "at": [
+        6,
+        6,
+        6
+      ],
+      "r": 4,
+      "material": "bone"
+    },
+    {
+      "shape": "box",
+      "from": [
+        4,
+        4,
+        0
+      ],
+      "to": [
+        8,
+        7,
+        2
+      ],
+      "material": "bone"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        3,
+        5
+      ],
+      "to": [
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        3,
+        5
+      ],
+      "to": [
+        8,
+        3,
+        6
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        4,
+        5
+      ],
+      "to": [
+        5,
+        4,
+        6
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        4,
+        5
+      ],
+      "to": [
+        8,
+        4,
+        6
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        3,
+        4
+      ],
+      "to": [
+        6,
+        3,
+        4
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        5,
+        4,
+        0
+      ],
+      "to": [
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        4,
+        0
+      ],
+      "to": [
+        7,
+        4,
+        1
+      ]
+    },
+    {
+      "shape": "sphere",
+      "at": [
+        3,
+        9,
+        1
+      ],
+      "r": 1,
+      "material": "grass"
+    }
+  ],
+  "prompt": "t",
+  "theme": "fantasy",
+  "compiled_voxels": 371
+}
