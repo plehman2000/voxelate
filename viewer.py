@@ -157,7 +157,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             data.voxels.forEach(v => {
                 const matType = v.material || 'default';
                 if (!materialsCache[matType]) {
-                    const color = MATERIAL_COLORS[matType] || MATERIAL_COLORS['default'];
+                    const color = /^#[0-9a-f]{6}$/i.test(matType)
+                        ? Number.parseInt(matType.slice(1), 16)
+                        : MATERIAL_COLORS[matType] || MATERIAL_COLORS['default'];
                     materialsCache[matType] = new THREE.MeshStandardMaterial({ 
                         color: color, 
                         roughness: 1.0

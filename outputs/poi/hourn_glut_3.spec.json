@@ -1,0 +1,338 @@
+{
+  "summary": "Hourn Glut looms ominously with towering spires and an imposing entrance, shrouded in ash-fog and darkened by the cliffs of the shattered maw.",
+  "parts": [
+    {
+      "shape": "hollow_box",
+      "from": [
+        2,
+        2,
+        0
+      ],
+      "to": [
+        10,
+        10,
+        12
+      ],
+      "material": "#2f3538"
+    },
+    {
+      "shape": "hollow_box",
+      "from": [
+        3,
+        3,
+        12
+      ],
+      "to": [
+        9,
+        9,
+        14
+      ],
+      "material": "#1c1c1e"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        2,
+        0
+      ],
+      "to": [
+        5,
+        2,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        2,
+        5,
+        0
+      ],
+      "to": [
+        2,
+        6,
+        3
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        8,
+        3,
+        0
+      ],
+      "to": [
+        9,
+        3,
+        2
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        7,
+        8,
+        7
+      ],
+      "to": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        3
+      ],
+      "z": [
+        0,
+        12
+      ],
+      "material": "#2f3538"
+    },
+    {
+      "shape": "column",
+      "at": [
+        9,
+        3
+      ],
+      "z": [
+        0,
+        12
+      ],
+      "material": "#2f3538"
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        9
+      ],
+      "z": [
+        0,
+        12
+      ],
+      "material": "#2f3538"
+    },
+    {
+      "shape": "column",
+      "at": [
+        9,
+        9
+      ],
+      "z": [
+        0,
+        12
+      ],
+      "material": "#2f3538"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        4,
+        4,
+        12
+      ],
+      "r": 1,
+      "h": 7,
+      "material": "#2f3538"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        8,
+        4,
+        12
+      ],
+      "r": 1,
+      "h": 7,
+      "material": "#2f3538"
+    },
+    {
+      "shape": "cylinder",
+      "at": [
+        6,
+        8,
+        12
+      ],
+      "r": 1,
+      "h": 7,
+      "material": "#2f3538"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        4,
+        4,
+        19
+      ],
+      "to": [
+        5,
+        5
+      ],
+      "material": "#1c1c1e"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        8,
+        4,
+        19
+      ],
+      "to": [
+        9,
+        5
+      ],
+      "material": "#1c1c1e"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        6,
+        8,
+        19
+      ],
+      "to": [
+        7,
+        9
+      ],
+      "material": "#1c1c1e"
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        1,
+        0
+      ],
+      "to": [
+        4,
+        1,
+        12
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        4,
+        0,
+        0
+      ],
+      "to": [
+        5,
+        0,
+        7
+      ]
+    },
+    {
+      "shape": "erase",
+      "from": [
+        6,
+        2,
+        12
+      ],
+      "to": [
+        7,
+        2,
+        15
+      ]
+    },
+    {
+      "shape": "column",
+      "at": [
+        9,
+        9
+      ],
+      "z": [
+        15,
+        17
+      ],
+      "material": "#2f3538",
+      "_generated_feature": "gothic_spire"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        8,
+        8,
+        18
+      ],
+      "to": [
+        10,
+        10
+      ],
+      "material": "#2f3538",
+      "_generated_feature": "gothic_spire"
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        7
+      ],
+      "z": [
+        15,
+        17
+      ],
+      "material": "#2f3538",
+      "_generated_feature": "gothic_spire"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        2,
+        6,
+        18
+      ],
+      "to": [
+        4,
+        8
+      ],
+      "material": "#2f3538",
+      "_generated_feature": "gothic_spire"
+    },
+    {
+      "shape": "column",
+      "at": [
+        3,
+        9
+      ],
+      "z": [
+        15,
+        17
+      ],
+      "material": "#2f3538",
+      "_generated_feature": "gothic_spire"
+    },
+    {
+      "shape": "pyramid",
+      "from": [
+        2,
+        8,
+        18
+      ],
+      "to": [
+        4,
+        10
+      ],
+      "material": "#2f3538",
+      "_generated_feature": "gothic_spire"
+    }
+  ],
+  "prompt": "World: Shinkuro\nWorld appearance: a drowned world of volcanic shelves under permanent overcast, lit by cold grey daylight\nWorld architecture: heavy masonry braced with scavenged metal, built to shed ash and seawater\nRegion: Shattered Maw\nRegion appearance: black basalt sea-needles rising from cold surf, ash-fog clinging to the ground\nRegion culture: scavenger crews who salvage wrecks and build from whatever washes up\nLocal building materials: basalt, driftwood, salvaged iron, tarred cloth\nPoint of interest: Hourn Glut\nArchetype: dungeon\nScale: lone\nFunction: exploration and salvage\nCondition: pristine\nVerticality: elevated\nTraits: haunted by shipwrecks, choked with ash-fog, perilous and treacherous, echoes of lost crews\nThreat: level 2, danger 22 (higher means larger, more fortified, more menacing)\nRegion: shinkuro-shinkuro-shattered-maw\nSeen from outside: Hourn Glut looms ominously against the backdrop of the jagged coastline, its crumbling stone walls blending into the dark basalt sea-needles that rise sharply from the crashing waves. The structure is a shadowy silhouette, partially obscured by the swirling ash-fog that clings to the ground, giving it an eerie presence amidst the treacherous terrain.\nCarries to the road: The distant crash of waves against the basalt cliffs echoes through the fog. A sharp, acrid scent of salt and burnt ash hangs heavy in the air. Faint whispers seem to drift from the ruins, carried on the chilling wind.\nInterior: 16 room(s), 16 passage(s) -- the exterior must look big enough to hold them\nKind: dungeon (exterior entrance to a menacing way down: gate, bars, steps, skulls).\nMood: dark, trapped, collapsed, flooded, haunted.\nArchetype recipe (required silhouette): Build a clear entrance descending underground: frame a dark doorway or stair opening with a heavy lintel or gate, flanking stone masses, and steps or a sloped approach leading into it. The entrance must be the dominant feature.\nTheme: gothic. Style: very tall, dark stone and slate with glass, steep gables, spiraling spires, cantilevered roof sections. Verticality x1.8 (taller than usual if >1, squatter if <1). Overhangs/cantilevers: 60% likely. Required silhouette: at least three distinct, tall, narrow spires visibly rise above the main roof; build each as a shaft with a pointed cap.\nUse the slots primary_wall, roof, trim, accent.\nAllowed colors: #2f3538, #1c1c1e, #5c3a35, #70777a, #6a1b1b, #9e2a2b, #d4a373. Use only these exact hex colors for every part.",
+  "theme": "gothic",
+  "allowed_colors": [
+    "#2f3538",
+    "#1c1c1e",
+    "#5c3a35",
+    "#70777a",
+    "#6a1b1b",
+    "#9e2a2b",
+    "#d4a373"
+  ],
+  "gothic_spires_added": 3,
+  "compiled_voxels": 732
+}

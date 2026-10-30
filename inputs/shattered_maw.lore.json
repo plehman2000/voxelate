@@ -1,0 +1,14 @@
+{
+  "world": {
+    "name": "Shinkuro",
+    "appearance": "a drowned world of volcanic shelves under permanent overcast, lit by cold grey daylight",
+    "architecture": "heavy masonry braced with scavenged metal, built to shed ash and seawater"
+  },
+  "region": {
+    "name": "Shattered Maw",
+    "appearance": "black basalt sea-needles rising from cold surf, ash-fog clinging to the ground",
+    "culture": "scavenger crews who salvage wrecks and build from whatever washes up",
+    "materials": ["basalt", "driftwood", "salvaged iron", "tarred cloth"],
+    "palette": ["#2F3538", "#1C1C1E", "#5C3A35", "#70777A", "#6A1B1B", "#9E2A2B", "#D4A373"]
+  }
+}
